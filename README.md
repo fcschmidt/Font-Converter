@@ -1,2 +1,2 @@
 # Font-Converter
-Conversor de Fontes - Pixel/EM/Porcentagem
+Conversor de Fontes - Pixel/EM/Pt/Porcentagem
