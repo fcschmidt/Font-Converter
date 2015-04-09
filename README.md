@@ -1,5 +1,5 @@
 # Conversor de Fontes  
-## CSS - Unidades de Medida
+## Unidades de medidas em CSS
 
 Um pequeno projeto para treino da linguagem **Java** realizado na Universidade.
 Esse aplicativo foi criado apenas com o intuito de fazer algumas conversões de unidades de medida do css de maneira simples e armazena-las.
@@ -10,33 +10,40 @@ As unidades de medida de comprimento CSS referem-se a medidas na horizontal ou n
 
 O formato para declarar o valor de uma unidade de medida CSS é um número com ou sem ponto decimal imediatamente precedido do sinal '+' (mais) ou do sinal '-' (menos), sendo o sinal '+' (mais) o valor "default" e imediatamente seguido por uma unidade identificadora (medida CSS válida - p.ex., px, em, deg, etc...). A unidade identificadora é opcional quando se declara um valor '0' (zero).
 
-Algumas das propriedades CSS permitem que sejam declarados valores negativos para unidades de medida. A adoção de valores negativos podem complicar a formatação do elemento e devem ser usados com cautela. Se valores negativos não forem suportados pela aplicação de usuário, eles serão convertidos para o valor mais próximo suportado (e isso pode tornar-se desastroso para um layout).
+Algumas das propriedades CSS permitem que sejam declarados valores negativos para unidades de medida. A adoção de valores negativos podem complicar a formatação do elemento e devem ser usados com cautela. Se valores negativos não forem suportados pela aplicação de usuário, eles serão convertidos para o valor mais próximo suportado (e isso pode tornar-se desastroso para um layout).Veja abaixo as unidades disponíveis:
 
-**Existem dois tipos de unidades de medida de comprimento CSS**
 
-**Unidade Relativa**
+### Unidades de Comprimento
+
+**Unidades Relativas**
 * em
 * ex
-* px - pixel
-* % - percentagem
 
 _as unidades relativas são referenciadas a outras unidades._
 
 **Unidade relativa** - é aquela tomada em relação a uma outra medida. Folhas de estilos em Cascata que usam unidades de comprimento são mais apropriadas para ajustes de uso em diferentes tipos de mídia(p. ex., de uma tela de monitor para uma impressora laser).
 
-**Unidade Absoluta**
+**Unidades Absolutas**
 * pt - point:1/72 in;
 * pc - pica: 12 points ou 1/6 in;
 * mm - milímetro: 1/10 cm;
-* in - polegada: 2,54 cm;  
+* in - polegada: 2,54 cm; 
+* px - pixel  
 
 **Unidade absoluta** - é aquela que não esta referenciada a qualquer outra unidade e nem é herdada. São unidades de medida de comprimento definidas nos sistemas de medidas pela física e em fim são os conhecidos "centímetros, polegadas etc...). São indicadas para serem usadas quando as mídias de exibição são perfeitamente conhecidas.
+
+**Unidades de Porcentagem**
+* % - porcentagem
 
 _O valor é tomado em relação:_
 
 * **em:** ...ao tamanho da fonte ('font-size') herdada;
 * **px:** ...ao dispositivo (midia) de exibição;
 * **%:** ... a uma medida previamente definida.
+
+_De todas as unidades, as recomendadas são as relativas, em especial **EMs**, que anteriormente seu tamanho era equivalente a altura da letra M em maiúscula, mas hoje, é igual a altura da letra do elemento em que se usa. Com esse tipo de medida, o autor mantém um controle relativo em relação ao tamanho da fonte padrão do usuário, onde pode especificar quanto maior ou menor se vê o texto na página. VOcê pode utilizar a unidade em também em qualquer propriedade CSS que admita medidas (margens, paddings,…), o que permite um desenho proporcional ao sistema do usuário._
+
+_Mas por que não utilizar medidas absolutas? As unidades absolutas como px (pixel), cm (centímetros), pt (pontos), permitem um controle exato da aparência da página, sempre e quando, que seja vizualizada com o fim que ela foi projetada (onde se acaba a acessibilidade da página). Por exemplo, a unidade px tem um valor diferente dependendo da resolução da tela e do tipo de computador usuário. Assim, um sistema Windows mantém uma equivalência de 96px por polegada, e o Macintosh, 72 px por polegada. Se utilizarmos pt (pontos), no lugar de px (pixels) o tamanho dos pontos dependem da resolução do usuário._
 
 ### Abordaremos apenas as seguintes Unidades: _PX (pixel), PT (point), EM, % (percentagem)_
 
@@ -49,7 +56,9 @@ _O valor é tomado em relação:_
 4. **Percentual (%):** A unidade cento é muito parecido com a unidade "em", salvo algumas diferenças fundamentais. Em primeiro lugar, o font-size atual é igual a _100%_ (ou seja, _12_ pontos = _100%_). _Ao usar o aparelho por cento, o seu texto permanece totalmente escalável para dispositivos móveis e para a acessibilidade._
 
 
-**Observação** _o Pixel base usado como padrão é 16px (pixel base ou pixel pai)_.
+**_Tabela e Equivalências_**
+
+_Abaixo você pode ver uma tabela equivalente as medidas e seus valores aproximados, pois tudo depende do Navegador utilizado e também do Sistema Operacional:_
 
 ![Exemplo](http://i59.tinypic.com/21bjbs9.jpg)
 
