@@ -62,7 +62,7 @@ _Abaixo você pode ver uma tabela equivalente as medidas e seus valores aproxima
 
 ![Exemplo](http://i59.tinypic.com/21bjbs9.jpg)
 
-**A Formula utilizada para efetuar a conversão é:**
+**Formula utilizada para efetuar a conversão usando alguns valores como exemplo:**
 
 **Converter PX para EM**
 * **Formula:** _tamanho em pixel / pixel pai_
