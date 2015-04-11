@@ -65,21 +65,21 @@ _Abaixo você pode ver uma tabela equivalente as medidas e seus valores aproxima
 **Formula utilizada para efetuar a conversão usando alguns valores como exemplo:**
 
 **Converter PX para EM**
-* **Formula:** _tamanho em pixel / pixel pai_
-* **Exemplo:** _12px / 16px = .75em_
+> * **Formula:** _tamanho em pixel / pixel pai_
+> * **Exemplo:** _12px / 16px = .75em_
 
 **Converter PX para %**
-* **Formula:**  _tamanho em pixel / pixel pai * 100_
-* **Exemplo:** _12px / 16px * 100 = 75%_
+> * **Formula:**  _tamanho em pixel / pixel pai * 100_
+> * **Exemplo:** _12px / 16px * 100 = 75%_
 
 **Converter PX para PT**
-* **Formula:** _tamanho em pixels * (pontos por polegada / pixels por polegada)_
-* **Exemplo:** _16px * (72pt / 96px) = 12pt_
+> * **Formula:** _tamanho em pixels * (pontos por polegada / pixels por polegada)_
+> * **Exemplo:** _16px * (72pt / 96px) = 12pt_
 
 **Converter EM para PX**
-* **Formula:** _tamanho em EMs * pixel pai_
-* **Exemplo:** _.75em * 16px = 12px_
+> * **Formula:** _tamanho em EMs * pixel pai_
+> * **Exemplo:** _.75em * 16px = 12px_
 
 **Converter EM para %**
-* **Formula:** _tamanho em EMs * 100_
-* **Exemplo:** _.75em * 100 = 75%_
+> * **Formula:** _tamanho em EMs * 100_
+> * **Exemplo:** _.75em * 100 = 75%_
