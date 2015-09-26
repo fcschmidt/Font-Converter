@@ -45,7 +45,7 @@ _De todas as unidades, as recomendadas são as relativas, em especial **EMs**, q
 
 _Mas por que não utilizar medidas absolutas? As unidades absolutas como px (pixel), cm (centímetros), pt (pontos), permitem um controle exato da aparência da página, sempre e quando, que seja vizualizada com o fim que ela foi projetada (onde se acaba a acessibilidade da página). Por exemplo, a unidade px tem um valor diferente dependendo da resolução da tela e do tipo de computador usuário. Assim, um sistema Windows mantém uma equivalência de 96px por polegada, e o Macintosh, 72 px por polegada. Se utilizarmos pt (pontos), no lugar de px (pixels) o tamanho dos pontos dependem da resolução do usuário._
 
-### Abordaremos apenas as seguintes Unidades: _PX (pixel), PT (point), EM, % (percentagem)_
+### Unidades de medidas usadas nesse projeto: _PX (pixel), PT (point), EM, % (percentagem)_
 
 1. **"Ems" (in):** A "in" é uma unidade expansível que é usado em meios documento da web. Um em é igual ao font-size atual, por exemplo, se o tamanho da fonte do documento é _12pt_, _1em_ é igual a _12pt_. Ems são escaláveis ​​na natureza, assim _2em_ seria igual _24pt_, .5em seria igual _6pt_, etc. Ems estão se tornando cada vez mais popular na web documentos devido à _escalabilidade e sua natureza **móvel-friendly** do dispositivo._
 
