@@ -1,5 +1,5 @@
 /* Projeto Teste para Conversor de Tamanho de Fontes
- * Vers√£o 1.0 Desktop 
+ * Vers„o 1.0 Desktop 
  * @author F√°bio C√©sar Schmidt
  * Criado em: 24/08/2014
  * √öltima Atualiza√ß√£o: 09/11/2014
@@ -60,9 +60,9 @@ public class sConvertor extends JFrame implements ActionListener,
 		this.setLocationRelativeTo(null);// Centraliza a Janela a tela
 
 		// JMENU
-		menuBar = new JMenuBar();
-		menuBar.add(new JMenu("Menu"));
-		menuBar.add(new JMenu("Reposit√≥rio"));
+		//menuBar = new JMenuBar();
+		//menuBar.add(new JMenu("Menu"));
+		//menuBar.add(new JMenu("RepositÛrio"));
 
 		/*
 		 * JLABEL Obs: SwingConstants.CENTER (alinha o conte√∫do no centro).
@@ -104,7 +104,7 @@ public class sConvertor extends JFrame implements ActionListener,
 		Lresult.setBounds(0, 200, 335, 30);
 		btnConveter.setBounds(30, 270, 100, 30);
 		btnClean.setBounds(200, 270, 100, 30);
-		menuBar.setBounds(0, 0, 340, 30);
+		//menuBar.setBounds(0, 0, 340, 30);
 
 		/* Adiciona os Componentes na Tela */
 		this.setLayout(null);// desativa o gerenciador de Layout
@@ -121,7 +121,7 @@ public class sConvertor extends JFrame implements ActionListener,
 		this.add(Lresult);
 		this.add(btnConveter);
 		this.add(btnClean);
-		this.add(menuBar);
+		//this.add(menuBar);
 
 		this.getContentPane().setLayout(null);// Seta o layout na tela
 		this.addWindowListener(this);
@@ -133,14 +133,14 @@ public class sConvertor extends JFrame implements ActionListener,
 		this.getContentPane().add(comboBox);
 		this.getContentPane().add(btnConveter);
 		this.getContentPane().add(btnClean);
-		this.getContentPane().add(menuBar);
+		//this.getContentPane().add(menuBar);
 
 		btnConveter.addActionListener(this);
 		btnClean.addActionListener(this);
 		jtf_value.addActionListener(this);
 		comboBox.addActionListener(this);
 
-		/* EVENTO DO BOT√ÉO DE CONVERS√ÉO */
+		/* EVENTO DO BOT√O DE CONVERS√O */
 		btnConveter.addActionListener(new ActionListener() {
 
 			@Override
@@ -163,8 +163,8 @@ public class sConvertor extends JFrame implements ActionListener,
 					switch (comboBox.getSelectedIndex()) {
 					case 0:
 						JOptionPane.showMessageDialog(null,
-								"Escolha o tipo de convers√£o",
-								Lresult.getText() + "Escolha uma op√ß√£o",
+								"Escolha o tipo de convers„o",
+								Lresult.getText() + "Escolha uma opÁ„o",
 								JOptionPane.ERROR_MESSAGE);
 						break;
 					case 1:// Converte Pixel em EM
@@ -174,7 +174,7 @@ public class sConvertor extends JFrame implements ActionListener,
 									JOptionPane.ERROR_MESSAGE);
 						} else if (numBase < 16) {// OBS.:tratar essa op√ß√£o de
 													// outra maneira
-							Lresult.setText("O valor minino aceito √© de 16 pixel");
+							Lresult.setText("O valor minino aceito de 16 pixel");
 				
 						} else {
 							result = value / numBase;
@@ -183,7 +183,7 @@ public class sConvertor extends JFrame implements ActionListener,
 						break;
 					case 2:// Converte Pixel em %
 						if (value <= 0) {
-							Lresult.setText("Digite um valor v√°lido para ser convertido");
+							Lresult.setText("Digite um valor v·lido para ser convertido");
 						} else {
 							result = (value / numBase) * 100;
 							Lresult.setText(result + " %");
@@ -191,7 +191,7 @@ public class sConvertor extends JFrame implements ActionListener,
 						break;
 					case 3:// Converte Pixel em Points PT
 						if (value <= 0) {
-							Lresult.setText("Digite um valor v√°lido para ser convertido");
+							Lresult.setText("Digite um valor v·lido para ser convertido");
 						} else {
 							double pt1 = 72;
 							double pixel2 = 96;
@@ -201,7 +201,7 @@ public class sConvertor extends JFrame implements ActionListener,
 						break;
 					case 4:// Converte EM em Pixel
 						if (value < 0.5) {
-							Lresult.setText("Digite um valor v√°lido para ser convertido");
+							Lresult.setText("Digite um valor v·lido para ser convertido");
 						} else {
 							result = value * numBase;
 							Lresult.setText(result + " pixel");
@@ -209,7 +209,7 @@ public class sConvertor extends JFrame implements ActionListener,
 						break;
 					case 5:// Converte EM em Points PT
 						if (value < 0.5) {
-							Lresult.setText("Digite um valor v√°lido para ser convertido");
+							Lresult.setText("Digite um valor v·lido para ser convertido");
 						} else {
 							result = value * 100;
 							Lresult.setText(result + " pt");
@@ -227,7 +227,7 @@ public class sConvertor extends JFrame implements ActionListener,
 			public void actionPerformed(ActionEvent ae) {
 				// Limpa os campos Texto
 				jtf_pixel.setText(pixelString);// limpa e retorna com o valor
-												// pr√©-definido
+												// prÈ-definido
 				jtf_value.setText("");
 				Lresult.setText("");
 			}
@@ -264,7 +264,7 @@ public class sConvertor extends JFrame implements ActionListener,
 	@Override
 	public void windowClosing(WindowEvent we) {
 		int resp = JOptionPane.showConfirmDialog(null,
-				"Deseja encerrar a aplica√ß√£o?", "Convert to Pixel",
+				"Deseja encerrar a aplicaÁ„o?", "Convert to Pixel",
 				JOptionPane.YES_NO_OPTION, JOptionPane.NO_OPTION);
 	}
 
