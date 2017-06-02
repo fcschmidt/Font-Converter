@@ -1,6 +1,6 @@
 # Conversor de Fontes
-
-[Old App using for Test](https://github.com/fcschmidt/font-converter/tree/master/old)
+[Primeira versão](https://github.com/fcschmidt/font-converter/tree/master/old/converterpixel), teste usando C# (2013).
+[Segunda versão](https://github.com/fcschmidt/font-converter/tree/master/old/FonteConvertor), teste usando Java (2014).
 
 ## Unidades de medidas em CSS
 
